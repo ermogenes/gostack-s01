@@ -38,3 +38,8 @@ Live-reload execution
 yarn webpack-dev-server --mode development
 ```
 Default location: http://localhost:8080/
+
+To bundle CSS
+```
+yarn add style-loader css-loader
+```
