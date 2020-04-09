@@ -1,3 +1,3 @@
-const add = (a, b) => { return a + b };
+import { add } from './add';
 
-console.log(add(1, 3));
+console.log(add(1, 4));
