@@ -2,25 +2,27 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 
 function App() {
-    const [ courses, setCourses ] = useState(['OmniStack', 'GoStack']);
+    const [ projects, setProjects ] = useState(
+        ['Project #1', 'Project #2', '...']
+    );
 
-    function handleAddCourse() {
-        setCourses([
-            ...courses,
-            `Course in ${Date.now()}`,
+    function handleAddProject() {
+        setProjects([
+            ...projects,
+            `Project #${Date.now()}`,
         ]);
     }
 
     return (
         <>
         <Header title="ReactJS" lead="The number one framework!" />
-        <Header title="Rocketseat courses" lead="Yes!">
+        <Header title="My projects" lead="It's a lot!">
             <ul>
-                {courses.map(course => <li key={course}>{course}</li>)}
+                {projects.map(project => <li key={project}>{project}</li>)}
             </ul>
         </Header>
 
-        <button type="button" onClick={handleAddCourse}>Add course</button>
+        <button type="button" onClick={handleAddProject}>Add project</button>
         </>
     );
 }
