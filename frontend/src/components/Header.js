@@ -1,10 +1,11 @@
 import React from 'react';
 
-export default function Header() {
+export default function Header({ title, lead, children }) {
     return (
-        <>
-        <header>ReactJs</header>
-        <div>The number one framework!</div>
-        </>
+        <header>
+            <h1>{title}</h1>
+            <em>{lead}</em>
+            {children}
+        </header>
     );
 }
