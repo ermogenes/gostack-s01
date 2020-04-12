@@ -59,12 +59,6 @@ app.get('/projects', (request, response) => {
         ? projects.filter(project => project.title.includes(title))
         : projects;
 
-    if (results.length === 0) {
-        return response.status(400).json({
-            error: 'Project not found',
-        });
-    }
-
     return response.json(results);
 });
 
