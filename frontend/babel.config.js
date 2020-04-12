@@ -6,4 +6,8 @@ module.exports = {
         // for react projects (JSX and others)
         '@babel/preset-react',
     ],
+    plugins: [
+        // add babel dev support to async/await
+        '@babel/plugin-transform-runtime',
+    ],
 };

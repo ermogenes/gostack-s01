@@ -68,3 +68,9 @@ yarn add file-loader
 ```
 yarn add axios
 ```
+
+Add Babel support to `async/await` (dev-only)
+
+```
+yarn add @babel/plugin-transform-runtime -D
+```
