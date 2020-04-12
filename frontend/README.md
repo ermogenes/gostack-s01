@@ -23,9 +23,18 @@ Integration with Babel
 yarn add babel-loader
 ```
 
-Manual execution
+Manual execution (development)
 ```
 yarn webpack --mode development
+```
+
+Manual execution (production)
+```
+yarn webpack --mode production
+```
+or
+```
+yarn build
 ```
 
 Live-reload install
@@ -37,6 +46,11 @@ Live-reload execution
 ```
 yarn webpack-dev-server --mode development
 ```
+or
+```
+yarn dev
+```
+
 Default location: http://localhost:8080/
 
 To bundle CSS
