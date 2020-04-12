@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 
 import './App.css';
+import someImage from './assets/coffee.jpg';
 
 function App() {
     const [ projects, setProjects ] = useState(
@@ -18,6 +19,7 @@ function App() {
     return (
         <>
         <Header title="ReactJS" lead="The number one framework!" />
+        <img src={someImage} width={256} />
         <Header title="My projects" lead="It's a lot!">
             <ul>
                 {projects.map(project => <li key={project}>{project}</li>)}
@@ -25,6 +27,7 @@ function App() {
         </Header>
 
         <button type="button" onClick={handleAddProject}>Add project</button>
+
         </>
     );
 }

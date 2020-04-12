@@ -57,3 +57,8 @@ To bundle CSS
 ```
 yarn add style-loader css-loader
 ```
+
+To bundle images
+```
+yarn add file-loader
+```
