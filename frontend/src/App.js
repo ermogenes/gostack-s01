@@ -4,7 +4,7 @@ import api from './services/api';
 import Header from './components/Header';
 
 import './App.css';
-import someImage from './assets/coffee.jpg';
+import flavorImage from './assets/man-on-computer.jpg';
 
 function App() {
     const [ projects, setProjects ] = useState([]);
@@ -34,9 +34,8 @@ function App() {
 
     return (
         <>
-        <Header title="ReactJS" lead="The number one framework!" />
-        <img src={someImage} width={256} />
-        <Header title="My projects" lead="It's a lot!">
+        <img src={flavorImage} width={160} />
+        <Header title="My projects" lead="Some (fun) projects:">
             <ul>
                 {projects.map(project => 
                     <li key={project.id}>{project.title}</li>
@@ -45,7 +44,6 @@ function App() {
         </Header>
 
         <button type="button" onClick={handleAddProject}>Add project</button>
-
         </>
     );
 }
