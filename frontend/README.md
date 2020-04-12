@@ -62,3 +62,9 @@ To bundle images
 ```
 yarn add file-loader
 ```
+
+## Integration Back/Frontend
+
+```
+yarn add axios
+```

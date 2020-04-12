@@ -1,12 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+import api from './services/api';
 import Header from './components/Header';
 
 import './App.css';
 import someImage from './assets/coffee.jpg';
 
 function App() {
-    const [ projects, setProjects ] = useState(
-        ['Project #1', 'Project #2', '...']
+    const [ projects, setProjects ] = useState([]);
+
+    // Trigger an action
+    useEffect(
+        // action
+        () => {
+            api.get('/projects').then(
+                response => {
+                    setProjects(response.data);
+                }
+            )
+        },
+        // dependencies (run once if empty)
+        []
     );
 
     function handleAddProject() {
@@ -22,7 +36,9 @@ function App() {
         <img src={someImage} width={256} />
         <Header title="My projects" lead="It's a lot!">
             <ul>
-                {projects.map(project => <li key={project}>{project}</li>)}
+                {projects.map(project => 
+                    <li key={project.id}>{project.title}</li>
+                )}
             </ul>
         </Header>
 
