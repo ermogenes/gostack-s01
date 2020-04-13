@@ -21,7 +21,7 @@ Ref.: https://react-native.rocketseat.dev/android/windows
 
 Create env variables:
 * `JAVA_HOME`: JDK 1.8 path (i.e. `C:\Program Files\Java\jdk1.8.0_172`) [not \bin].
-* `ANDROID_HOME`: an custom Android SDK path without spaces (i.e. `c:\Android\SDK`).
+* `ANDROID_HOME`: a custom Android SDK path without spaces (i.e. `c:\Android\SDK`).
 
 Custom setup:
 * Use JDK in `JAVA_HOME` variable (do not use the default).
