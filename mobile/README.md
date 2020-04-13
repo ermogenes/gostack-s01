@@ -40,3 +40,23 @@ Running:
 ```
 react-native run-android
 ```
+
+### To consume API
+
+```
+yarn add axios
+```
+
+Local endpoint:
+
+* iOS with emulator: use `localhost`
+* iOS with physical device: use IP
+* Android with emulator and ADB: use ADB reverse and `localhost`
+* Android with AVD: use `10.0.2.2`, or previous
+* Android with Genymotion: use `10.0.3.2`
+* Android with physical device: use IP
+
+To config ADB port redirect:
+```
+adb reverse tcp:3333 tcp:3333
+```
