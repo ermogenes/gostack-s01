@@ -6,6 +6,7 @@ Study files for Rocketseat's GoStack week 1 (level 01).
 
 * `backend` contains the API ([details](./backend/)).
 * `frontend` contains the web client ([details](./frontend/)).
+* `mobile` contains the mobile client ([details](./mobile/)).
 
 ## Tags description
 
